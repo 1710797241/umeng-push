@@ -174,8 +174,10 @@ public static final int *;
 
 ### 配置华为、小米、魅族厂商通道使用的 Activity
 
-`打开指定页面` 填入 `${包名}.UmengPushActivity`，比如 `com.abc.UmengPushActivity`。
-
+`离线推送打开指定页面` 填入 `${包名}.UmengPushActivity`，比如 `com.abc.UmengPushActivity`。
+######厂商离线推送
+需配置MiPushTestActivity打开页面
+在manifest.xml中配置MiPushTestActivity
 ![](https://user-images.githubusercontent.com/2732303/77288805-9764e700-6d13-11ea-91e1-3c2218f14bcb.png)
 
 注意，如果在打包阶段用了别的包名，需改为对应的包名。
@@ -183,6 +185,7 @@ public static final int *;
 ### 解决魅族的兼容问题
 
 在 `drawable` 目录下添加一个图标，命名为 `stat_sys_third_app_notify.png`，建议尺寸 `64px * 64px`，图标四周留有透明。若不添加此图标，可能在部分魅族手机上无法弹出通知。
+
 
 ## Usage
 
